@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-1 col-md-3 col-lg-3">
+    </div>
+    <mat-card class="cards white col-sm-10 col-md-4 col-lg-4">
+      <mat-card-header>
+        <mat-card-title>
+          <img src='../../assets/images/bottr.png' height = '90em;' width = '100%'/>
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image class = "card-image">
+      <mat-card-content class="form-group">
+        <mat-tab-group class="demo-tab-group">
+          <mat-tab label="LogIn">
+            <input type="text" class="form-control form-input margin" [(ngModel)]="user.userId" placeholder="userId"/>
+            <input type="password" class="form-control form-input margin" [(ngModel)]="user.pwd" placeholder="password"/>
+            <button class="btn btn-default col-sm-12 col-md-12 col-lg-12 logIn" color="#77ddc9" (click)="logIn()">LogIn</button>
+          </mat-tab>
+          <mat-tab label="SignUp">
+            <input type="text" class="form-control form-input margin" [(ngModel)]="user.userId" placeholder="userId"/>
+            <input type="password" class="form-control form-input margin" [(ngModel)]="user.pwd" placeholder="password"/>
+            <button class="btn btn-default col-sm-12 col-md-12 col-lg-12 signUp" (click)="signUp()">SignUp</button>  
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

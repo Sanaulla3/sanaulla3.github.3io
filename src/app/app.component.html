@@ -1,0 +1,15 @@
+<div class = "whitesmoke container">
+  <div class = "row header">
+    <img class = "logo" src = "https://pbs.twimg.com/profile_images/964747928475586560/dEmubV28_400x400.jpg"/>
+    <label class = "title">bottr</label>
+    <span *ngIf='!!current_profile' class = "logOut">{{current_profile.email}} <img src="../../assets/images/logout.png" height = '18em' (click)='logOut()'/></span> 
+  </div>
+  <div class='content'>
+    <div *ngIf='!current_profile'>
+      <app-authentication></app-authentication>
+    </div>
+    <div *ngIf='!!current_profile'>
+      <app-home></app-home>
+    </div>
+  </div>
+</div>

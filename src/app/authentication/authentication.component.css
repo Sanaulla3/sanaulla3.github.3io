@@ -1,0 +1,23 @@
+.white{
+  background: white;
+}
+
+.margin{
+  margin-top: 0.5em;
+  margin-bottom: 1em; 
+}
+
+.logIn{
+  background-color: #77ddc9;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+
+.signUp{
+  background-color: #a856bc;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+}
